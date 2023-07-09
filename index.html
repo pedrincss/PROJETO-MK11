@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Mortal Kombat - Pedro Giovanne</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./src/css/reset.css">
+<link rel="stylesheet" href="./src/css/estilos.css">
+<link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="./src/imagens/logo.mk11.png" alt="MORTAL KOMBAT 11">
+    </header>
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo">Escolha seu Lutador</h1>
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="kang" data-name="LIU KANG" data-description="Monge Shaolin e campeão do Plano Terreno. O órfão Liu Kang foi adotado e treinado nas artes do kombate pela ordem Shaolin. Ele honrou seus guardiões derrotando Shang Tsung no Mortal Kombat e salvando o Plano Terreno como o Escolhido um título que é também um fardo">
+                    <img src="./src/imagens/card liu kang.png" alt="Personagem Liu Kang">
+                </li>
+                <li class="personagem" id="kung" data-name="KUNG LAO" data-description="Monge Shaolin e descendente do Grande Kung Lao. O Kung Lao mais jovem conquistou a grandeza ao vencer a aliança mortal de Shang Tsung e Quan Chi no Mortal Kombat. Imprudente e rebelde, porém corajoso e indomável, Kung Lao luta para provar que é digno de seus gloriosos ancestrais">
+                    <img src="./src/imagens/card kung lao.png" alt="Personagem Kung Lao">
+                </li>
+                <li class="personagem" id="kitana" data-name="KITANA" data-description="Assassina de 10.000 anos e princesa da Exoterra. Shao Kahn casou com a mãe de Kitana e criou a menina como sua herdeira, escondendo o fato de que assassinou o pai dela para conquistar Edenia. Agora que a verdade veio à tona, Kitana luta para vingar o pai">
+                    <img src="./src/imagens/card kitana.png" alt="Personagem Kitana">
+                </li>
+                <li class="personagem" id="raiden" data-name="RAIDEN" data-description="Deus Imortal do Trovão, Protetor do Plano Terreno. Raiden salvou o Plano Terreno inúmeras vezes, convocando os guerreiros mais fortes e valentes da época para defendê-lo. Após séculos de kombate e carnificina, ele teme que haja consequências indesejadas para a humanidade e para si mesmo">
+                    <img src="./src/imagens/card raiden.png" alt="Personagem Raiden">
+                </li>
+                <li class="personagem" id="sonya" data-name="SONYA BLADE" data-description="Oficial condecorada das Forças Especiais. Sonya enfrentou o torneio Mortal Kombat, defendeu o Plano Terreno e resgatou seu parceiro, Jax Briggs. Séria até demais, ela não descansa, preferindo manter a vigilância até que todos os planos estejam em segurança">
+                    <img src="./src/imagens/card sonya blade.png" alt="Personagem Sub-Zero">
+                </li>
+                <li class="personagem" id="cage" data-name="JOHNNY CAGE" data-description="Celebridade de segundo escalão que nunca recebeu qualquer prêmio como ator. Após uma série de continuações de baixo orçamento do filme Escolinha de Ninjas, Johnny Cage atingiu o auge da carreira aos 28 anos. Agora, ele luta contra todas as probabilidades para salvar o Plano Terreno e provar que é um herói ainda mais corajoso na vida real que nas telas">
+                    <img src="./src/imagens/card johnny cage.png" alt="Personagem Sub-Zero">
+                </li>
+                <li class="personagem" id="scorpion" data-name="SCORPION" data-description="Grão-mestre Scorpion dos Shirai Ryu. Guiado pela fúria, Hanzo Hasashi passou por enormes dificuldades para vingar sua família e seu clã, sem descansar até acabar com o assassino Quan Chi. Ele agora lidera um novo clã Shirai Ryu, vingando aqueles que não podem se vingar">
+                    <img src="./src/imagens/card scorpion.png" alt="Personagem Scorpion">
+                </li>
+                <li class="personagem" id="sub" data-name="SUB-ZERO" data-description="Grão-mestre do clã Lin Kuei. Kuai Liang venceu a morte para redimir seu clã do mal cometido por Sektor e pelos Lin Kuei cibernéticos. Ele reconstruiu os Lin Kuei e negociou a paz com os rivais Shirai Ryu. Agora, ele espera finalmente encerrar o capítulo pecaminoso do passado dos Lin Kuei">
+                    <img src="./src/imagens/card sub-zero.png" alt="Personagem Sub-Zero">
+                </li>
+                <li class="personagem" id="shang" data-name="SHANG TSUNG" data-description="Feiticeiro de Almas e histórico anfitrião de Mortal Kombat. Nascido em Earthrealm, a busca incansável de Shang Tsung por magias mais poderosas o levou à Exoterra, onde Shao Kahn ofereceu a ele um poder sombrio que nenhum feiticeiro do Earthrealm poderia ter. Shang Tsung jurou lealdade eterna a Shao Kahn em troca dessa magia maligna, mas ele está longe de ser um servo fiel. Ele sonha com o dia em que seu poder superará a de Shao Kahn e vai pagar qualquer preço para que isso aconteça">
+                    <img src="./src/imagens/card shang-tsung.png" alt="Personagem Sub-Zero">
+                </li>
+            </ul>
+        </section>
+        <section class="personagem-selecionado"> <img class="personagem-grande" src="./src/imagens/card-kang.png" alt="Personagem Selecionado">
+
+            <div class="informacoes-personagem">
+                <h2 class="nome-do-personagem" id="nome-personagem">Liu Kang</h2>
+                <p class="descricao-do-personagem" id="descricao-personagem">Monge Shaolin e campeão do Plano Terreno. O órfão Liu Kang foi adotado e treinado nas artes do kombate pela ordem Shaolin. Ele honrou seus guardiões derrotando Shang Tsung no Mortal Kombat e salvando o Plano Terreno como o Escolhido, um título que é também um fardo</p>
+            </div></section>
+        
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
